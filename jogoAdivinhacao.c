@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <locale.h>
-#define NUMERO_TENTATIVAS 3
 
 int main()
 {
@@ -12,11 +11,12 @@ int main()
 
     int numerosecreto = 77;
     int palpite;
+    int tentativa = 1;
 
-    for (int i = 1; i <= NUMERO_TENTATIVAS; i++)
+    while (1)
     {
 
-        printf("Tentativa %d de %d\n", i, NUMERO_TENTATIVAS);
+        printf("Tentativa %d\n", tentativa);
         printf("Qual é o seu palpite? ");
         scanf("%d", &palpite);
         printf("Seu palpite foi %d\n", palpite);
@@ -24,9 +24,9 @@ int main()
         int acertou = (palpite == numerosecreto);
         int maior = palpite > numerosecreto;
 
-        if(palpite < 0){
+        if (palpite < 0)
+        {
             printf("Atenção! Você não pode passar valores negativos!\n");
-            i--;
             continue;
         }
 
@@ -46,6 +46,8 @@ int main()
         {
             printf("Seu palpite foi menor que o número secreto\n");
         }
+        tentativa++;
     }
-    printf("===Fim de jogo!===");
+    printf("===Fim de jogo!===\n");
+    printf("Você acertou em %d de tentatias", tentativa);
 }
