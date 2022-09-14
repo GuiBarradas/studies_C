@@ -12,7 +12,7 @@ int main()
     int numerosecreto = 77;
     int palpite;
     int tentativa = 1;
-    int pontos = 1000;
+    double pontos = 1000;
 
     while (1)
     {
@@ -48,10 +48,10 @@ int main()
             printf("Seu palpite foi menor que o número secreto\n");
         }
         tentativa++;
-        int pontosperdidos = (palpite - numerosecreto) /2;
+        double pontosperdidos = (palpite - numerosecreto) / 2.0;
         pontos = pontos - pontosperdidos;
     }
     printf("===Fim de jogo!===\n");
     printf("Você acertou em %d de tentativas\n", tentativa);
-    printf("Total de pontos: %d\n", pontos);
+    printf("Total de pontos: %.1f\n", pontos);
 }
