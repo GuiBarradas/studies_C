@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main() {
-  int numero;
+  int num;
   printf("Qual tabuada você quer?");
-  scanf("%d", &numero);
+  scanf("%d", &num);
 
   for(int i = 0; i <= 10; i++) {
-    int multiplicacao = numero * i;
-    printf("%d x %d = %d\n", numero, i, multiplicacao);
+    int multiplicacao = num * i;
+    printf("%d x %d = %d\n", num, i, multiplicacao);
   }
 }
