@@ -13,12 +13,12 @@ int main()
 
 
     printf("          P  /_\\  P                                      P  /_\\  P                        \n");
-    printf("         /_\\_|_|_/_\\                                    /_\\_|_|_/_\\                      \n");
-    printf("     n_n | ||. .|| | n_n         Bem vindo ao        n_n | ||. .|| | n_n                  \n");
-    printf("     |_|_|nnnn nnnn|_|_|     Jogo de Adivinhação!  |_|_|nnnn nnnn|_|_|                  \n");
-    printf("    |" "  |  |_|  |"  " |                                  |" "  |  |_|  |"  " |                 \n");
-    printf("    |_____| ' _ ' |_____|                           |_____| ' _ ' |_____|                 \n");
-    printf("          \\__|_|__/                                       \\__|_|__/                      \n");
+    printf("         /_\\_|_|_/_\\                                   /_\\_|_|_/_\\                      \n");
+    printf("     n_n | ||. .|| | n_n         Bem vindo ao        n_n | ||. .|| | n_n                    \n");
+    printf("     |_|_|nnnn nnnn|_|_|     Jogo de Adivinhação!   |_|_|nnnn nnnn|_|_|                     \n");
+    printf("    |" "  |  |_|  |"  " |                           |" "  |  |_|  |"  " |                   \n");
+    printf("    |_____| ' _ ' |_____|                           |_____| ' _ ' |_____|                   \n");
+    printf("          \\__|_|__/                                       \\__|_|__/                       \n");
     printf("\n\n");
 
 
