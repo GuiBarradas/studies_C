@@ -1,6 +1,18 @@
 #include <stdio.h>
 #include <string.h>
 
+void openning()
+{
+printf("	        +--|-+|             \n");
+printf("		   O  |                 \n");
+printf("		  /|\\ |                \n");
+printf("		  / \\ |                \n");
+printf("		      |                 \n");
+printf("		== == == ==             \n");
+printf("               JOGO DA FORCA    \n");
+printf("		== == == ==             \n");
+}
+
 int main()
 {
 
@@ -11,6 +23,7 @@ int main()
 	int enforcou = 0;
 	char chutes[26];
 	int tentativas = 0;
+    openning();
 
 	do
 	{
@@ -18,7 +31,7 @@ int main()
 
 		for (int i = 0; i < strlen(palavrasecreta); i++)
 		{
-			int achou = 0; 
+			int achou = 0;
 			for (int j = 0; j < tentativas; j++)
 			{
 				if (chutes[j] == palavrasecreta[i])
